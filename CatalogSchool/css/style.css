@@ -1,0 +1,190 @@
+/* navigation bar */
+#rows{
+    margin-bottom: 20px;
+}
+.navbar li a{
+    color: white !important;
+}
+.navbar-branch strong{
+color: white !important;
+font-size: 25px;
+}
+.navbar li a:hover:not(#active){
+    color:orange !important;
+}
+.navbar li a#active{
+    color: orange !important;
+}
+.navbar .icon{
+    color:white !important;
+}
+.banner{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.img-aboutus{
+    width: 100%;
+}
+/* education */
+#edu{
+    padding: 0;
+}
+.img-edu{
+    width: 100%;
+    
+}
+#img-com{
+    background-position: relative;
+    background: url('Communication.jpg') no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+    
+}
+.contentbusi img{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+  }
+  .contentbusi h2,h4{
+      padding-left: 40px;
+      color: white;
+      font-size: 20px;
+  }
+  .contentbusi p{
+    padding-left: 40px;
+    color: white;
+}
+/* new */
+.card-title{
+    color: black;
+    padding:0 !important;
+}
+.input-item{
+    margin:10px 0;
+    width: 100%;
+    
+}
+/* contact */
+textarea{
+    width: 100%;
+}
+#but{
+margin-left: 90%;
+width: 30%;
+}
+.container{
+    margin-bottom: 20px;
+}
+/* footer */
+#footer{
+    margin-bottom:0;
+}
+#row-footer{
+    padding-top: 10px;
+}
+.icon-footer{
+    list-style-type: none;
+}
+footer p{
+    margin:0;
+}
+
+
+  /* zoom tablet */
+@media only screen and (max-width:1024px){
+    .contentbusi img{
+        position:absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: -25px;
+        margin-top: -30px;
+      }
+      .contentbusi h2,h4,p{
+        padding-left: 40px;
+        color: white;
+        font-size: 15px;
+        line-height: 15px;
+      } 
+      .card-body p{
+        color: black;
+        line-height: 15px;
+        padding:0;
+        font-size: 15px;
+        }
+        .item p{
+            padding:0;
+            color: black;
+            line-height: 18px;
+        }
+        #but{
+            margin-left:15%;
+            width: 60%;
+        }
+        #footer{
+            margin-bottom:0;
+        }
+        #row-footer{
+            padding-top: 10px;
+        }
+    }
+    
+
+
+/* zoom smartphone */
+@media only screen and (max-width:600px){
+.container-fluid {
+position: relative;
+}
+#img-com{
+    height: 200px;
+}
+#brand{
+    position: absolute;
+    font-size: 15px;
+    left:35%;
+    color:white;  
+}
+.contentbusi img{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-top: -30px;
+  }
+.contentbusi h2,h4,p{
+    padding-left: 40px;
+    color: white;
+    font-size: 12px;
+    line-height: 10px;  
+}
+.card-body p{
+color: black;
+line-height: 15px;
+padding:0;
+font-size: 15px;
+}
+.item p{
+    padding:0;
+    color: black;
+    line-height: 18px;
+}
+#but{
+    margin-left:15%;
+    width: 60%;
+}
+#footer{
+    margin-bottom:0;
+}
+#row-footer p{
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+}
