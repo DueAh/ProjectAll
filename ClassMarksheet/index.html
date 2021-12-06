@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Class Masksheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <form id="validate">
+        <h1 style="text-align: center;">Class Masksheet</h1>
+        <div class="form-group">
+            <label for="nameStudent">Họ tên</label>
+            <input type="text" class="form-control" id="nameStudent" placeholder="nhập tên" name="nameStudent">
+            <p class="p1 error-message"></p>
+            <br>
+        </div>
+        <div class="form-group">
+            <label for="scoreToan">Điểm toán</label>
+            <input type="text" class="form-control" id="scoreToan" name="scoreToan">
+            <p class="p2 error-message"></p>
+            <br>
+        </div>
+        <div class="form-group">
+            <label for="scoreLy">Điểm lý</label>
+            <input type="text" class="form-control" id="scoreLy" name="scoreLy">
+            <p class="p3 error-message"></p>
+            <br>
+        </div>
+        <div class="form-group">
+            <label for="scoreHoa">Điểm hóa</label>
+            <input type="text" class="form-control" id="scoreHoa" name="scoreHoa">
+            <p class="p4 error-message"></p>
+            <br>
+        </div>
+        <button type="button" class="submit-btn btn btn-success">Nhập</button>
+    </form>
+    <table class=" table table-striped table-dark" cellspacing="3" cellpadding="3">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>Toán</th>
+                <th>Lý</th>
+                <th>Hóa</th>
+                <th>Trung bình</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="dataList"></tbody>
+    </table>
+    <div class="submitForm"><button class="cal-score btn btn-warning" type="button">Tinh Diem Trung Binh</button>
+        <button class="fil-score btn btn-primary" type="button">Xac Dinh Hoc Sinh Gioi</button>
+    </div>
+
+    <script src="validateJquery.js"></script>
+
+</body>
+
+</html>
